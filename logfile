@@ -1,0 +1,46 @@
+2022-06-21 07:11:37.404 EAT [83095] LOG:  starting PostgreSQL 14.4 on aarch64-apple-darwin21.5.0, compiled by Apple clang version 13.1.6 (clang-1316.0.21.2.5), 64-bit
+2022-06-21 07:11:37.406 EAT [83095] LOG:  listening on IPv6 address "::1", port 5432
+2022-06-21 07:11:37.406 EAT [83095] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-06-21 07:11:37.407 EAT [83095] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-06-21 07:11:37.411 EAT [83096] LOG:  database system was shut down at 2022-06-21 07:11:15 EAT
+2022-06-21 07:11:37.415 EAT [83095] LOG:  database system is ready to accept connections
+2022-06-21 07:11:41.565 EAT [83145] FATAL:  database "allan" does not exist
+2022-06-21 08:09:26.066 EAT [88537] FATAL:  role "youruser" does not exist
+2022-06-21 08:09:29.118 EAT [88546] FATAL:  role "youruser" does not exist
+2022-06-21 08:09:32.135 EAT [88548] FATAL:  role "youruser" does not exist
+2022-06-22 06:44:41.788 EAT [55165] ERROR:  value "1655856000000" is out of range for type integer
+2022-06-22 06:44:41.788 EAT [55165] CONTEXT:  unnamed portal parameter $2 = '...'
+2022-06-22 06:44:41.788 EAT [55165] STATEMENT:  SELECT "Savings"."id" AS "Savings_id", "Savings"."description" AS "Savings_description", "Savings"."amount" AS "Savings_amount", "Savings"."date" AS "Savings_date", "Savings"."userId" AS "Savings_userId" FROM "savings" "Savings" INNER JOIN "user" "Savings__Savings_user" ON "Savings__Savings_user"."id"="Savings"."userId" WHERE ("Savings__Savings_user"."id" = $1 AND "Savings"."date" <= $2)
+2022-06-22 06:56:14.120 EAT [55439] ERROR:  date/time field value out of range: "1655856000000"
+2022-06-22 06:56:14.120 EAT [55439] HINT:  Perhaps you need a different "datestyle" setting.
+2022-06-22 06:56:14.120 EAT [55439] CONTEXT:  unnamed portal parameter $2 = '...'
+2022-06-22 06:56:14.120 EAT [55439] STATEMENT:  SELECT "Savings"."id" AS "Savings_id", "Savings"."description" AS "Savings_description", "Savings"."amount" AS "Savings_amount", "Savings"."date" AS "Savings_date", "Savings"."userId" AS "Savings_userId" FROM "savings" "Savings" INNER JOIN "user" "Savings__Savings_user" ON "Savings__Savings_user"."id"="Savings"."userId" WHERE ("Savings__Savings_user"."id" = $1 AND "Savings"."date" <= $2)
+2022-06-22 07:07:50.663 EAT [56999] ERROR:  invalid input syntax for type timestamp: "0NaN-NaN-NaNTNaN:NaN:NaN.NaN+NaN:NaN"
+2022-06-22 07:07:50.663 EAT [56999] CONTEXT:  unnamed portal parameter $3 = '...'
+2022-06-22 07:07:50.663 EAT [56999] STATEMENT:  INSERT INTO "savings"("description", "amount", "date", "userId") VALUES ($1, $2, $3, $4) RETURNING "id", "description", "amount"
+2022-06-22 07:09:51.878 EAT [57178] ERROR:  invalid input syntax for type timestamp: "0NaN-NaN-NaNTNaN:NaN:NaN.NaN+NaN:NaN"
+2022-06-22 07:09:51.878 EAT [57178] CONTEXT:  unnamed portal parameter $3 = '...'
+2022-06-22 07:09:51.878 EAT [57178] STATEMENT:  INSERT INTO "savings"("description", "amount", "date", "userId") VALUES ($1, $2, $3, $4) RETURNING "id", "description", "amount"
+2022-06-23 07:01:06.033 EAT [71780] LOG:  unexpected EOF on client connection with an open transaction
+2022-06-23 07:54:14.947 EAT [73675] LOG:  unexpected EOF on client connection with an open transaction
+2022-06-23 11:43:16.149 EAT [83095] LOG:  received smart shutdown request
+2022-06-23 11:43:16.152 EAT [83095] LOG:  background worker "logical replication launcher" (PID 83102) exited with exit code 1
+2022-06-23 11:43:16.152 EAT [83097] LOG:  shutting down
+2022-06-23 11:43:16.176 EAT [83095] LOG:  database system is shut down
+2022-06-23 22:11:44.717 EAT [25433] LOG:  starting PostgreSQL 14.4 on aarch64-apple-darwin21.5.0, compiled by Apple clang version 13.1.6 (clang-1316.0.21.2.5), 64-bit
+2022-06-23 22:11:44.719 EAT [25433] LOG:  listening on IPv6 address "::1", port 5432
+2022-06-23 22:11:44.719 EAT [25433] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-06-23 22:11:44.719 EAT [25433] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-06-23 22:11:44.724 EAT [25434] LOG:  database system was shut down at 2022-06-23 22:11:30 EAT
+2022-06-23 22:11:44.727 EAT [25433] LOG:  database system is ready to accept connections
+2022-06-23 22:11:47.706 EAT [25484] FATAL:  database "allan" does not exist
+2022-06-23 22:11:54.457 EAT [25535] FATAL:  database "allan" does not exist
+2022-06-23 22:11:59.889 EAT [25588] FATAL:  role "postgres" does not exist
+2022-06-23 22:12:08.287 EAT [25640] FATAL:  database "allan" does not exist
+2022-06-23 22:12:33.082 EAT [26010] FATAL:  database "allan" does not exist
+2022-06-23 22:13:39.138 EAT [26584] FATAL:  role "postgres" does not exist
+2022-06-23 22:13:44.754 EAT [25433] LOG:  could not open file "postmaster.pid": No such file or directory
+2022-06-23 22:13:44.754 EAT [25433] LOG:  performing immediate shutdown because data directory lock file is invalid
+2022-06-23 22:13:44.754 EAT [25433] LOG:  received immediate shutdown request
+2022-06-23 22:13:44.754 EAT [25433] LOG:  could not open file "postmaster.pid": No such file or directory
+2022-06-23 22:13:44.760 EAT [25433] LOG:  database system is shut down
